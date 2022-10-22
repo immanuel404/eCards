@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Congratulations!</title>
+  <link rel="icon" href="img/icon.png">
+  <link href="css/3style.css" rel="stylesheet">
+<style>
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0px;
+  width: 100%;
+  background-color: black;
+}
+nav a {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 1rem;
+  color: lightblue;
+  background-color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid lightblue;
+}
+nav a:hover {
+  color: white;
+  transition: 0.5s;
+}
+</style>
+</head>
+
+<body>
+  <div id="scratch">
+    <nav><!-- NAVBAR -->
+      <a href="index.html">Anniversary</a>
+      <a href="2index.html">Birthday</a>
+      <a href="3index.html">Congrats</a>
+      <a href="4index.html">Motivation</a>
+    </nav>
+  	<!-- TEXT -->
+  	<h2>Peel To View Message</h2>
+  </div>
+<!-- JAVASCRIPT -->
+<script
+src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="ScratchPad.min.js"></script>
+<script type="text/javascript">
+	$('#scratch').wScratchPad({
+	size        : 100,          // The size of the brush/scratch.
+	bg          : 'img/3img.jpg',  // Background (image path or hex color).
+	fg          : '#000',  // Foreground (image path or hex color).
+});
+</script>
+
+</body>
+</html>

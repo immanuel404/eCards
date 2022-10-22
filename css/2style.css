@@ -1,0 +1,52 @@
+body {
+	background-image: url("../img/2img.jpg");
+	background-size: cover;
+	filter: brightness(100%);
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 80vh;
+}
+.wavy .name {
+	font-family: times;
+	font-size: 90px;
+	color: yellow;
+}
+
+.wavy {
+	position: relative;
+	color: #fff;
+	-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.wavy span {
+	position: relative;
+	display: inline-block;
+	font-size: 90px;
+	text-transform: uppercase;
+	animation: animate 0.9s ease-in-out infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0px);
+	}
+	20% {
+		transform: translateY(-20px);
+	}
+	40%,100% {
+		transform: translateY(0px);
+	}
+}
+
+
+/*MEDIA QUERRIES*/
+@media (max-width: 850px) {
+	body {
+		display: none;
+	}
+}
